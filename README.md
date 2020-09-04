@@ -1,29 +1,8 @@
-# Node API 1 Project Starter Code
-
-## Introduction
-
 - Building a RESTful API.
 - Performing CRUD operations.
 - Writing API endpoints.
 
-## Instructions
-
-### Task 1: Project Setup
-
-- **Fork** and **Clone** this repository.
-- **CD into the folder** where you cloned the repository.
-
-### Task 2a: MVP
-
-Use Node.js and Express to build an API that performs CRUD operations on users.
-
-- Add a `.gitignore` file appropriate for `node.js` projects.
-- Add a new `package.json`.
-- Add a `server` script to `package.json` that runs the API using `nodemon`.
-
-### Write endpoints
-
-Add the code necessary to create a Web API and implement the following _endpoints_:
+### Endpoints:
 
 | Method | URL            | Description                                                                                            |
 | ------ | -------------- | ------------------------------------------------------------------------------------------------------ |
@@ -34,8 +13,6 @@ Add the code necessary to create a Web API and implement the following _endpoint
 | PUT    | /api/users/:id | Updates the user with the specified `id` using data from the `request body`. Returns the modified user |
 
 #### User Schema
-
-Each User _resource_ should conform to the following structure (AKA schema):
 
 ```js
 {
@@ -114,28 +91,4 @@ When the client makes a `PUT` request to `/api/users/:id`:
   - update the user document in the database using the new information sent in the `request body`.
   - respond with HTTP status code `200` (OK).
   - return the newly updated _user document_.
-  
-### Task 2b: Exit Ticket
-
-Once you begin, you will have 15 minutes to answer the questions [here](https://app.codesignal.com/public-test/Enw3XXyb7poZ6WTpy/pXE64R7ExgXbto).
-
-The completion of these questions is mandatory for MVP. However, passing the quiz doesn't affect your standing as a Lambda School student whatsoever. This is Lambda School testing itself! Please answer honestly and to the best of your ability without using external references.
-
-### Task 3: Stretch Problems
-
-To work on the stretch problems you'll need to enable the `cors` middleware. Follow these steps:
-
-- add the `cors` npm module: `npm i cors`.
-- add `server.use(cors())` after `server.use(express.json())`.
-
-Create a new React application and connect it to your server:
-
-- the React application can be anywhere, but, for this project create it inside the folder for the solution.
-- connect to the `/api/users` endpoint in the API and show the list of users.
-- add a delete button to each displayed user that will remove it from the server.
-- add forms to add and update data.
-- Style the list of users however you see fit.
-
-## Submission Format
-* [ ] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` (student's  Repo). **Please don't merge your own pull request**
-* [ ] Fill out your module retrospective form [here](https://forms.lambdaschool.com/module-retrospective) with a link to your PR
+ 
