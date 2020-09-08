@@ -4,6 +4,8 @@ const shortid = require('shortid');
 const server=express();
 var bodyParser = require('body-parser')
 
+const port = process.env.PORT;
+
 server.use(bodyParser.json());
 
 const users = [
@@ -78,4 +80,4 @@ server.put('/api/users/:id', (req, res) =>{
     res.status(200).json(foundUser)
 })
 
-server.listen(3000, () => console.log("Server is running"))
+server.listen(port, () => console.log("Server is running"))
